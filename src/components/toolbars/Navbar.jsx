@@ -11,9 +11,9 @@ const Navbar = () => {
 
   const navLinks = [
     { id: 1, nav: "About", delay: 0.1 },
-    { id: 1, nav: "Interests", delay: 0.2 },
-    { id: 1, nav: "Projects", delay: 0.3 },
-    { id: 1, nav: "Work", delay: 0.4 },
+    { id: 2, nav: "Interests", delay: 0.2 },
+    { id: 3, nav: "Projects", delay: 0.3 },
+    { id: 4, nav: "Work", delay: 0.4 },
   ];
 
   const container = (delay) => ({
@@ -50,10 +50,14 @@ const Navbar = () => {
 
         <div className="flex items-center justify-center gap-10 font-light">
           <ul className="relative hidden items-center justify-center gap-10 text-[#8E8E8E] md:flex">
-            {navLinks.map((navLink, index) => (
-              <Link to={navLink} smooth={true} duration={800}>
+            {navLinks.map((navLink) => (
+              <Link
+                key={navLink.id}
+                to={navLink.nav}
+                smooth={true}
+                duration={800}
+              >
                 <motion.button
-                  key={navLink.id}
                   className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -99,18 +103,22 @@ const Navbar = () => {
             className={
               nav
                 ? "duration-900 fixed left-[-100%] top-0 h-full w-[45%] ease-out"
-                : "fixed left-0 top-0 z-50 h-full w-[45%] border-r-[1px] border-r-[#3b3b3b] bg-[#030303] duration-700 ease-in-out"
+                : "fixed left-0 top-0 z-50 h-full w-[50%] border-r-[1px] border-r-[#3b3b3b] bg-[#030303] duration-700 ease-in-out"
             }
           >
-            <ul className="my-10 ml-10 flex flex-col items-start justify-center gap-5 text-[#8e8e8e]">
-              <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-xl font-normal tracking-wider text-transparent">
+            <ul className="my-10 ml-10 flex flex-col items-start justify-center gap-8 text-xl text-[#8e8e8e]">
+              <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-2xl font-normal tracking-wider text-transparent">
                 c.berry
               </span>
-              {navLinks.map((navLink, index) => (
-                <Link to={navLink} smooth={true} duration={800}>
+              {navLinks.map((navLink) => (
+                <Link
+                  key={navLink.id}
+                  to={navLink.nav}
+                  smooth={true}
+                  duration={800}
+                >
                   <motion.button
                     onClick={handleNav}
-                    key={navLink.id}
                     className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}

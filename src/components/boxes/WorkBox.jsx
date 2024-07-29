@@ -33,12 +33,12 @@ const WorkBox = (props) => {
         </p>
         <div className="flex flex-wrap items-start">
           {props.skills.map((skill, index) => (
-            <div className="group relative mb-3 mr-3 rounded-md bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[1px]">
+            <div
+              key={index}
+              className="group relative mb-3 mr-3 rounded-md bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[1px]"
+            >
               <span className="flex w-full rounded-md bg-[#030303] px-3 py-1">
-                <span
-                  key={index}
-                  className="bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xs font-normal tracking-wider text-transparent"
-                >
+                <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xs font-normal tracking-wider text-transparent">
                   {skill}
                 </span>
               </span>

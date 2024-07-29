@@ -54,7 +54,7 @@ const Hero = () => {
             variants={container(0.1)}
             initial="hidden"
             animate="visible"
-            className="relative z-10 w-56 sm:hidden"
+            className="relative z-10 mt-5 w-36 sm:hidden"
             src={heroPhoto}
             alt="Hero Photo"
           />

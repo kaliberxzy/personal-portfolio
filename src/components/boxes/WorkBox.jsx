@@ -1,8 +1,25 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const WorkBox = (props) => {
+  const delay = props.delay;
+
+  const container = (delay) => ({
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.3, delay: delay },
+    },
+  });
   return (
-    <div className="flex flex-col items-start justify-between tracking-wider md:flex-row">
+    <motion.div
+      variants={container(delay)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="flex flex-col items-start justify-between tracking-wider md:flex-row"
+    >
       <div className="mb-2 ml-0 w-60 flex-shrink-0 text-sm text-[#8E8E8E] md:ml-8 md:mt-[5px] lg:mr-24">
         {props.date}
       </div>
@@ -29,7 +46,7 @@ const WorkBox = (props) => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

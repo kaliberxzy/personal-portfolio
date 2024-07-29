@@ -9,12 +9,31 @@ const Navbar = () => {
 
   const handleNav = () => setNav(!nav);
 
-  const navLinks = ["About", "Interests", "Projects", "Work"];
+  const navLinks = [
+    { id: 1, nav: "About", delay: 0.1 },
+    { id: 1, nav: "Interests", delay: 0.2 },
+    { id: 1, nav: "Projects", delay: 0.3 },
+    { id: 1, nav: "Work", delay: 0.4 },
+  ];
+
+  const container = (delay) => ({
+    hidden: { y: -10, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.2, delay: delay },
+    },
+  });
 
   return (
-    <div>
+    <motion.div className="bg-[#030303]">
       {/* Gradient 1: Quarter-circle in the top-left corner */}
-      <div className="absolute left-0 top-0 z-20 hidden h-2/6 w-1/6 bg-[radial-gradient(ellipse_at_top_left,_rgba(255,138,0,0.5)_0%,_rgba(255,255,255,0)_70%)] md:block"></div>
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.4 }}
+        className="absolute left-0 top-0 z-30 hidden h-2/6 w-1/6 overflow-auto bg-[radial-gradient(ellipse_at_top_left,_rgba(255,138,0,0.5)_0%,_rgba(255,255,255,0)_70%)] md:block"
+      ></motion.div>
 
       <div className="mx-auto flex max-w-[1050px] items-center justify-between pb-5 pt-10">
         <motion.a
@@ -22,6 +41,9 @@ const Navbar = () => {
           className="ml-10 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-xl font-normal tracking-wider text-transparent"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
           c.berry
         </motion.a>
@@ -31,16 +53,26 @@ const Navbar = () => {
             {navLinks.map((navLink, index) => (
               <Link to={navLink} smooth={true} duration={800}>
                 <motion.button
-                  key={index}
+                  key={navLink.id}
                   className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
+                  variants={container(navLink.delay)}
+                  initial="hidden"
+                  animate="visible"
                 >
-                  {navLink}
+                  {navLink.nav}
                 </motion.button>
               </Link>
             ))}
-            <div className="font-thin text-[#676767]">|</div>
+            <motion.div
+              variants={container(0.4)}
+              initial="hidden"
+              animate="visible"
+              className="font-thin text-[#676767]"
+            >
+              |
+            </motion.div>
             <motion.a
               href={resume}
               target="_blank"
@@ -48,6 +80,9 @@ const Navbar = () => {
               className="mr-10 rounded-xl bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% px-5 py-[7px] text-base font-normal tracking-wide text-stone-900"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              variants={container(0.5)}
+              initial="hidden"
+              animate="visible"
             >
               Resume
             </motion.a>
@@ -75,12 +110,12 @@ const Navbar = () => {
                 <Link to={navLink} smooth={true} duration={800}>
                   <motion.button
                     onClick={handleNav}
-                    key={index}
+                    key={navLink.id}
                     className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
-                    {navLink}
+                    {navLink.nav}
                   </motion.button>
                 </Link>
               ))}
@@ -98,7 +133,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

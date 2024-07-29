@@ -11,39 +11,51 @@ import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <div className="mx-10 mb-28 flex max-w-[1050px] flex-col items-start pt-20 sm:items-center md:h-screen md:justify-center lg:mb-44 lg:pt-0 xl:mx-auto">
-      <h3 className="mb-12 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-light tracking-wider text-transparent md:mb-10 md:text-4xl lg:mb-16">
+      <motion.h3
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        viewport={{ once: true }}
+        className="mb-12 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-light tracking-wider text-transparent md:mb-10 md:text-4xl lg:mb-16"
+      >
         Projects
-      </h3>
+      </motion.h3>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <ProjectBox
           image={metricProjectPreview}
           title="Metric Dashboard"
           subtitle="Data Visualization Using React"
+          delay={0}
         />
         <ProjectBox
           image={blockchainProjectPreview}
           title="What is Blockchain?"
           subtitle="Video Explanation of Bitcoin"
+          delay={0.1}
         />
         <ProjectBox
           image={aiProjectPreview}
           title="Digit Recognition AI"
           subtitle="Neural Network Using Python"
+          delay={0.3}
         />
         <ProjectBox
           image={securityProjectPreview}
           title="Security Presentations"
           subtitle="Teaching Cybersecurity"
+          delay={0}
         />
         <ProjectBox
           image={calculusProjectPreview}
           title="Calculus w/ Lego"
           subtitle="Find Volume By Integration"
+          delay={0.1}
         />
         <ProjectBox
           image={legoProjectPreview}
           title="Lego Art Gallery"
           subtitle="Brick Masterpieces"
+          delay={0.3}
         />
       </div>
     </div>

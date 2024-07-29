@@ -2,9 +2,24 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const ProjectBox = (props) => {
+  const delay = props.delay;
+
+  const container = (delay) => ({
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.3, delay: delay },
+    },
+  });
   return (
     <motion.button
+      variants={container(delay)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
       whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 1.05 }}
       className="group relative h-72 overflow-hidden rounded-2xl"
     >
       {/* Gradient Layer */}

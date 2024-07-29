@@ -2,8 +2,25 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const InterestBox = (props) => {
+  const delay = props.delay;
+
+  const container = (delay) => ({
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.3, delay: delay },
+    },
+  });
+
   return (
-    <div className="relative flex sm:p-2 lg:w-[500px]">
+    <motion.div
+      variants={container(delay)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="relative flex sm:p-2 lg:w-[500px]"
+    >
       <motion.img
         className="hidden sm:mr-4 sm:flex sm:h-16"
         whileHover={{ scale: 1.1 }}
@@ -19,7 +36,7 @@ const InterestBox = (props) => {
           {props.text}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

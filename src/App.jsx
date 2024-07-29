@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import About from "./components/sections/About";
 import Hero from "./components/sections/Hero";
 import Navbar from "./components/toolbars/Navbar";
@@ -6,14 +7,21 @@ import Projects from "./components/sections/Projects";
 import Work from "./components/sections/Work";
 import Footer from "./components/toolbars/Footer";
 import { Element } from "react-scroll";
+import background from "./assets/background.png";
 
 function App() {
+  useEffect(() => {
+    const loadingScreen = document.getElementById("loading-screen");
+    if (loadingScreen) {
+      loadingScreen.style.display = "none";
+    }
+  }, []);
+
   return (
     <>
       <Element name="Home">
         <Navbar />
       </Element>
-
       <Hero />
       <Element name="About">
         <About />
@@ -27,7 +35,6 @@ function App() {
       <Element name="Work">
         <Work />
       </Element>
-
       <Footer />
     </>
   );

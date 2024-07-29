@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import Loading from "./components/toolbars/Loading";
 import About from "./components/sections/About";
 import Hero from "./components/sections/Hero";
 import Navbar from "./components/toolbars/Navbar";
@@ -7,35 +8,47 @@ import Projects from "./components/sections/Projects";
 import Work from "./components/sections/Work";
 import Footer from "./components/toolbars/Footer";
 import { Element } from "react-scroll";
-import background from "./assets/background.png";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    const loadingScreen = document.getElementById("loading-screen");
-    if (loadingScreen) {
-      loadingScreen.style.display = "none";
+    const handlePageLoad = () => {
+      setLoading(false);
+    };
+
+    if (document.readyState === "complete") {
+      handlePageLoad();
+    } else {
+      window.addEventListener("load", handlePageLoad);
+      return () => window.removeEventListener("load", handlePageLoad);
     }
   }, []);
-
   return (
     <>
-      <Element name="Home">
-        <Navbar />
-      </Element>
-      <Hero />
-      <Element name="About">
-        <About />
-      </Element>
-      <Element name="Interests">
-        <Interests />
-      </Element>
-      <Element name="Projects">
-        <Projects />
-      </Element>
-      <Element name="Work">
-        <Work />
-      </Element>
-      <Footer />
+      {loading ? (
+        <Loading />
+      ) : (
+        <div>
+          <Element name="Home">
+            <Navbar />
+          </Element>
+          <Hero />
+          <Element name="About">
+            <About />
+          </Element>
+          <Element name="Interests">
+            <Interests />
+          </Element>
+          <Element name="Projects">
+            <Projects />
+          </Element>
+          <Element name="Work">
+            <Work />
+          </Element>
+          <Footer />
+        </div>
+      )}
     </>
   );
 }

@@ -13,7 +13,8 @@ const ProjectBox = (props) => {
     },
   });
   return (
-    <motion.button
+    <motion.a
+      href={props.link}
       variants={container(delay)}
       initial="hidden"
       whileInView="visible"
@@ -42,7 +43,7 @@ const ProjectBox = (props) => {
           View Details
         </div>
       </div>
-    </motion.button>
+    </motion.a>
   );
 };
 

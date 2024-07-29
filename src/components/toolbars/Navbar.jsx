@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import resume from "../../../public/colin-berry-resume-2024.pdf";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
 
   const handleNav = () => setNav(!nav);
 
@@ -96,18 +96,21 @@ const Navbar = () => {
             onClick={handleNav}
             className="mr-10 block text-[#c6c6c6] md:hidden"
           >
-            {nav ? <CgMenu size={20} /> : <CgClose size={20} />}
+            {nav ? <CgClose size={20} /> : <CgMenu size={20} />}
           </div>
 
-          <div
+          <motion.div
+            initial={{ x: "-100%" }}
+            animate={nav ? { x: 0 } : { x: "-100%" }}
+            transition={{ duration: 0.3 }}
             className={
               nav
-                ? "duration-900 fixed left-[-100%] top-0 h-full w-[45%] ease-out"
-                : "fixed left-0 top-0 z-50 h-full w-[50%] border-r-[1px] border-r-[#3b3b3b] bg-[#030303] duration-700 ease-in-out"
+                ? "fixed left-0 top-0 z-50 h-full w-[45%] border-r-[1px] border-r-[#3b3b3b] bg-[#030303]"
+                : "fixed left-[-100%] top-0 h-full w-[45%]"
             }
           >
             <ul className="my-10 ml-10 flex flex-col items-start justify-center gap-8 text-xl text-[#8e8e8e]">
-              <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-2xl font-normal tracking-wider text-transparent">
+              <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-2xl tracking-wider text-transparent">
                 c.berry
               </span>
               {navLinks.map((navLink) => (
@@ -119,7 +122,7 @@ const Navbar = () => {
                 >
                   <motion.button
                     onClick={handleNav}
-                    className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent"
+                    className="bg-gradient-to-r bg-clip-text font-thin hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -138,7 +141,7 @@ const Navbar = () => {
                 Resume
               </motion.a>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.div>

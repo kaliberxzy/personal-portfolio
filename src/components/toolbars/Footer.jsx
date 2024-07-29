@@ -22,17 +22,25 @@ const Footer = () => {
   });
 
   const projects = [
-    "Metric Dashboard",
-    "Blockchain Technical Analysis",
-    "Digit Recognition Neural Network",
-    "Cybersecurity Lecture Slides",
-    "Calculus w/ Lego",
-    "Lego Art Gallery",
+    { id: 1, name: "Metric Dashboard", href: "/" },
+    {
+      id: 2,
+      name: "Blockchain Technical Analysis",
+      href: "/https://www.youtube.com/watch?v=msh0eyI1kGk",
+    },
+    { id: 3, name: "Digit Recognition Neural Network", href: "/" },
+    { id: 4, name: "Cybersecurity Lecture Slides", href: "/" },
+    { id: 5, name: "Calculus w/ Lego", href: "/" },
+    { id: 6, name: "Personal Portfolio", href: "/" },
   ];
 
-  const listProjects = projects.map((project, index) => (
-    <a key={index} className="hover:cursor-pointer hover:text-[#808080]">
-      {project}
+  const listProjects = projects.map((project) => (
+    <a
+      href={project.href}
+      key={project.id}
+      className="hover:cursor-pointer hover:text-[#808080]"
+    >
+      {project.name}
     </a>
   ));
 

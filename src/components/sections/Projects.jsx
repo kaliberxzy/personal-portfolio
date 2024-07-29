@@ -6,6 +6,7 @@ import aiProjectPreview from "../../assets/projects-imgs/ai-project.png";
 import securityProjectPreview from "../../assets/projects-imgs/security-project.png";
 import calculusProjectPreview from "../../assets/projects-imgs/calculus-project.png";
 import legoProjectPreview from "../../assets/projects-imgs/lego-project.png";
+import portfolioProjectPreview from "../../assets/projects-imgs/portfolio-project.png";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -25,36 +26,42 @@ const Projects = () => {
           image={metricProjectPreview}
           title="Metric Dashboard"
           subtitle="Data Visualization Using React"
+          link="/"
           delay={0}
         />
         <ProjectBox
           image={blockchainProjectPreview}
           title="What is Blockchain?"
           subtitle="Video Explanation of Bitcoin"
+          link="https://www.youtube.com/watch?v=msh0eyI1kGk"
           delay={0.1}
         />
         <ProjectBox
           image={aiProjectPreview}
           title="Digit Recognition AI"
           subtitle="Neural Network Using Python"
+          link="/"
           delay={0.3}
         />
         <ProjectBox
           image={securityProjectPreview}
           title="Security Presentations"
           subtitle="Teaching Cybersecurity"
+          link="/"
           delay={0}
         />
         <ProjectBox
           image={calculusProjectPreview}
           title="Calculus w/ Lego"
           subtitle="Find Volume By Integration"
+          link="/"
           delay={0.1}
         />
         <ProjectBox
-          image={legoProjectPreview}
-          title="Lego Art Gallery"
-          subtitle="Brick Masterpieces"
+          image={portfolioProjectPreview}
+          title="Personal Portflio"
+          subtitle="Yes, this one!"
+          link="/"
           delay={0.3}
         />
       </div>

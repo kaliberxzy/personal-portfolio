@@ -31,7 +31,7 @@ const Hero = () => {
             animate="visible"
             className="flex"
           >
-            <span className="absolute mx-auto box-content flex w-fit select-none border bg-gradient-to-r from-orange-400 to-[#FF0000] bg-clip-text py-4 text-center text-5xl font-thin tracking-wide text-transparent blur-xl md:text-7xl lg:text-8xl">
+            <span className="absolute mx-auto box-content flex hidden w-fit select-none border bg-gradient-to-r from-orange-400 to-[#FF0000] bg-clip-text py-4 text-center text-5xl font-thin tracking-wide text-transparent blur-xl sm:text-7xl lg:text-8xl">
               Colin Berry
             </span>
             <h1 className="relative top-0 flex h-auto w-fit select-auto items-center justify-center bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text py-4 text-center text-5xl font-semibold tracking-wide text-transparent sm:text-7xl lg:text-8xl">

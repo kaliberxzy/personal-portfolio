@@ -1,35 +1,15 @@
 <!doctype html>
 <html
   lang="en"
-  class="scrollbar-thin scrollbar-track-[#030303] scrollbar-thumb-[hsl(14,100%,30%)] h-screen overflow-y-scroll"
+  class="h-screen overflow-y-scroll scrollbar-thin scrollbar-track-[#030303] scrollbar-thumb-[hsl(14,100%,30%)]"
 >
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colin Berry</title>
-    <style>
-      #loading-screen {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #030303;
-      }
-    </style>
   </head>
   <body>
-    <div
-      id="loading-screen"
-      class="z-50 flex items-center justify-center text-white"
-    >
-      <h1
-        class="bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-xl font-normal tracking-wider text-transparent"
-      >
-        loading...
-      </h1>
-    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

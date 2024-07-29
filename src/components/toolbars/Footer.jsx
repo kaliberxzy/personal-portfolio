@@ -26,7 +26,7 @@ const Footer = () => {
     {
       id: 2,
       name: "Blockchain Technical Analysis",
-      href: "/https://www.youtube.com/watch?v=msh0eyI1kGk",
+      href: "https://www.youtube.com/watch?v=msh0eyI1kGk",
     },
     { id: 3, name: "Digit Recognition Neural Network", href: "/" },
     { id: 4, name: "Cybersecurity Lecture Slides", href: "/" },

@@ -38,7 +38,7 @@ const ProjectBox = (props) => {
           {props.subtitle}
         </h2>
       </div>
-      <div className="absolute inset-0 hidden transform items-center justify-center group-hover:flex">
+      <div className="absolute inset-0 flex items-center justify-center group-hover:flex sm:hidden">
         <div className="rounded-xl bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% px-5 py-3 text-sm font-medium tracking-wider text-[#1e1e1e] shadow-2xl shadow-black">
           View Details
         </div>

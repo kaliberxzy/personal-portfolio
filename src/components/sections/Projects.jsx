@@ -59,7 +59,7 @@ const Projects = () => {
         />
         <ProjectBox
           image={portfolioProjectPreview}
-          title="Personal Portflio"
+          title="Personal Portfolio"
           subtitle="Yes, this one!"
           link="/"
           delay={0.3}

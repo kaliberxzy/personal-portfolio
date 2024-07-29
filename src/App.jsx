@@ -14,7 +14,10 @@ function App() {
 
   useEffect(() => {
     const handlePageLoad = () => {
-      setLoading(false);
+      // Set a delay of 2 seconds before disabling the loading state
+      setTimeout(() => {
+        setLoading(false);
+      }, 1500);
     };
 
     if (document.readyState === "complete") {
@@ -24,6 +27,7 @@ function App() {
       return () => window.removeEventListener("load", handlePageLoad);
     }
   }, []);
+
   return (
     <>
       {loading ? (

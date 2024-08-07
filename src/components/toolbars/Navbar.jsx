@@ -3,6 +3,7 @@ import { CgMenu, CgClose } from "react-icons/cg";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import resume from "../../../public/colin-berry-resume-2024.pdf";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -43,9 +44,10 @@ const Navbar = () => {
           whileTap={{ scale: 0.9 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.1 }}
         >
-          c.berry
+          <img className="size-6" src={logo} alt="Colin Berry Logo" />
+          {/* c.berry */}
         </motion.a>
 
         <div className="flex items-center justify-center gap-10 font-light">
@@ -110,9 +112,10 @@ const Navbar = () => {
             }
           >
             <ul className="my-10 ml-10 flex flex-col items-start justify-center gap-8 text-xl text-[#8e8e8e]">
-              <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-2xl tracking-wider text-transparent">
+              <img className="size-6" src={logo} alt="Colin Berry Logo" />
+              {/* <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-2xl tracking-wider text-transparent">
                 c.berry
-              </span>
+              </span> */}
               {navLinks.map((navLink) => (
                 <Link
                   key={navLink.id}

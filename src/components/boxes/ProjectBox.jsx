@@ -14,6 +14,8 @@ const ProjectBox = (props) => {
   });
   return (
     <motion.a
+      target="_blank"
+      rel="noopener noreferrer"
       href={props.link}
       variants={container(delay)}
       initial="hidden"

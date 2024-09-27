@@ -5,8 +5,8 @@ import blockchainProjectPreview from "../../assets/projects-imgs/blockchain-proj
 import aiProjectPreview from "../../assets/projects-imgs/ai-project.png";
 import securityProjectPreview from "../../assets/projects-imgs/security-project.png";
 import calculusProjectPreview from "../../assets/projects-imgs/calculus-project.png";
-import legoProjectPreview from "../../assets/projects-imgs/lego-project.png";
 import portfolioProjectPreview from "../../assets/projects-imgs/portfolio-project.png";
+import network from "../../../public/colin-berry-neural-network-project.pdf";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -40,7 +40,7 @@ const Projects = () => {
           image={aiProjectPreview}
           title="Digit Recognition AI"
           subtitle="Neural Network Using Python"
-          link="/"
+          link={network}
           delay={0.3}
         />
         <ProjectBox

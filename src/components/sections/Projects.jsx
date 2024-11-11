@@ -3,10 +3,12 @@ import ProjectBox from "../boxes/ProjectBox";
 import metricProjectPreview from "../../assets/projects-imgs/metric-project.png";
 import blockchainProjectPreview from "../../assets/projects-imgs/blockchain-project.png";
 import aiProjectPreview from "../../assets/projects-imgs/ai-project.png";
-import securityProjectPreview from "../../assets/projects-imgs/security-project.png";
+import weedProjectPreview from "../../assets/projects-imgs/bicycle-weed-eater-project.png";
 import calculusProjectPreview from "../../assets/projects-imgs/calculus-project.png";
 import portfolioProjectPreview from "../../assets/projects-imgs/portfolio-project.png";
 import network from "../../../public/colin-berry-neural-network-project.pdf";
+import lego from "../../../public/colin-berry-lego-calculus-project.pdf";
+import dashboard from "../../../public/colin-berry-dashboard-project.pdf";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -26,7 +28,7 @@ const Projects = () => {
           image={metricProjectPreview}
           title="Metric Dashboard"
           subtitle="Data Visualization Using React"
-          link="/"
+          link={dashboard}
           delay={0}
         />
         <ProjectBox
@@ -44,17 +46,17 @@ const Projects = () => {
           delay={0.3}
         />
         <ProjectBox
-          image={securityProjectPreview}
-          title="Security Presentations"
-          subtitle="Teaching Cybersecurity"
-          link="/"
+          image={weedProjectPreview}
+          title="Bicycle Weed Eater"
+          subtitle="Senior Design"
+          link=""
           delay={0}
         />
         <ProjectBox
           image={calculusProjectPreview}
           title="Calculus w/ Lego"
           subtitle="Find Volume By Integration"
-          link="/"
+          link={lego}
           delay={0.1}
         />
         <ProjectBox

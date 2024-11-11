@@ -41,9 +41,9 @@ const ProjectBox = (props) => {
         </h2>
       </div>
       <div className="absolute inset-0 hidden items-center justify-center group-hover:flex">
-        <div className="rounded-xl bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% px-5 py-3 text-sm font-medium tracking-wider text-[#1e1e1e] shadow-2xl shadow-black">
-          View Details
-        </div>
+          <div className="rounded-xl bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% px-5 py-3 text-md font-medium tracking-wider shadow-2xl shadow-black">
+            {props.link != "" && ( <p>View Details</p> ) || props.link === "" && ( <p>In Progress</p> )}
+          </div>
       </div>
     </motion.a>
   );

@@ -8,7 +8,7 @@ import {
   ABOUT_TEXT_2_3,
 } from "../../constants";
 import aboutPhoto1 from "../../assets/about-hero-photos/about-photo1.png";
-import aboutPhoto2 from "../../assets/about-hero-photos/about-photo2.png";
+import aboutPhoto2 from "../../assets/about-hero-photos/about-photo2.jpg";
 
 const About = () => {
   const [read, setRead] = useState(false);

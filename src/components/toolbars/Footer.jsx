@@ -10,6 +10,9 @@ import { FaInstagram } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import network from "../../../public/colin-berry-neural-network-project.pdf";
+import lego from "../../../public/colin-berry-lego-calculus-project.pdf";
+import dashboard from "../../../public/colin-berry-dashboard-project.pdf";
 
 const Footer = () => {
   const container = (delay) => ({
@@ -22,15 +25,15 @@ const Footer = () => {
   });
 
   const projects = [
-    { id: 1, name: "Metric Dashboard", href: "/" },
+    { id: 1, name: "Metric Dashboard", href: dashboard },
     {
       id: 2,
       name: "Blockchain Technical Analysis",
       href: "https://www.youtube.com/watch?v=msh0eyI1kGk",
     },
-    { id: 3, name: "Digit Recognition Neural Network", href: "/" },
-    { id: 4, name: "Cybersecurity Lecture Slides", href: "/" },
-    { id: 5, name: "Calculus w/ Lego", href: "/" },
+    { id: 3, name: "Digit Recognition Neural Network", href: network },
+    { id: 4, name: "Bicycle Weed Eater", href: "/" },
+    { id: 5, name: "Calculus w/ Lego", href: lego },
     { id: 6, name: "Personal Portfolio", href: "/" },
   ];
 

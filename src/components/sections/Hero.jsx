@@ -82,7 +82,7 @@ const Hero = () => {
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center text-[#030303] text-xl tracking-wide font-bold rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-[7px] px-2 min-w-[100px]"
+              className="flex justify-center items-center text-[#030303] text-xl tracking-wide font-bold rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-[7px] px-6"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -93,7 +93,7 @@ const Hero = () => {
               href={"https://www.linkedin.com/in/colintberry/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center items-center group relative rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[2px] min-w-[100px]"
+              className="flex justify-center items-center group relative rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[2px]"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >

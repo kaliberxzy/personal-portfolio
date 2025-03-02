@@ -36,7 +36,7 @@ const Navbar = () => {
         className="absolute hidden md:block top-0 z-[-2] h-screen w-4/5 bg-[radial-gradient(ellipse_15%_35%_at_0%_-10%,rgb(254,112,3),rgba(255,255,255,0))]"
       ></motion.div>
 
-      <div className="mx-auto flex max-w-[1050px] items-center justify-between pb-5 pt-16">
+      <div className="mx-auto flex max-w-[1050px] items-center justify-between pb-5 pt-10 sm:pt-16">
         <motion.a
           href="/"
           className="ml-10 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-xl font-normal tracking-wider text-transparent"

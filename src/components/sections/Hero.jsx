@@ -82,11 +82,11 @@ const Hero = () => {
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center text-[#030303] text-xl tracking-wide font-semibold rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-[7px] min-w-[100px]"
+              className="flex justify-center text-[#030303] text-xl tracking-wide font-bold rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-[7px] px-2 min-w-[100px]"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              Resume
+              <span>Resume</span>
             </motion.a>
 
             <motion.a

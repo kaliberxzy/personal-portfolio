@@ -35,9 +35,9 @@ const WorkBox = (props) => {
           {props.skills.map((skill, index) => (
             <div
               key={index}
-              className="flex justify-center items-center group relative mb-3 mr-4 rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[1.5px]"
+              className="flex justify-center items-center group relative mb-3 mr-4 rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[1px]"
             >
-              <span className="flex justify-center items-center rounded-full bg-[#030303] pt-1 pb-[3.5px] px-5" >
+              <span className="flex justify-center items-center rounded-full bg-[#030303] py-2 px-5" >
                 <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xs font-semibold tracking-wide text-transparent">
                   {skill}
                 </span>

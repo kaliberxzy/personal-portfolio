@@ -124,7 +124,7 @@ const Footer = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <div className="mb-4 bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xl font-normal tracking-wider text-transparent">
+            <div className="mb-4 bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xl font-medium tracking-wider text-transparent">
               Current projects
             </div>
             <ul className="flex flex-col items-start space-y-3 text-sm font-light tracking-wider text-[#8E8E8E]">
@@ -137,7 +137,7 @@ const Footer = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <div className="mb-4 bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xl font-normal tracking-wider text-transparent">
+            <div className="mb-4 bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xl font-medium tracking-wider text-transparent">
               Jump to
             </div>
             <ul className="flex flex-col items-start space-y-3 text-sm font-light tracking-wider text-[#8E8E8E]">
@@ -150,7 +150,7 @@ const Footer = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <div className="mb-4 bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xl font-normal tracking-wider text-transparent">
+            <div className="mb-4 bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xl font-medium tracking-wider text-transparent">
               Connect with me
             </div>
             <ul className="flex flex-col items-start space-y-3 text-sm font-light tracking-wider text-[#8E8E8E]">
@@ -172,7 +172,7 @@ const Footer = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="mx-12 flex justify-center pb-10 text-center text-sm font-light tracking-wider text-[#8E8E8E]"
+        className="mx-12 flex justify-center pb-10 text-center text-sm font-normal tracking-wide text-[#8E8E8E]"
       >
         Prototyped in Figma and designed using React + Tailwind by Colin Berry
       </motion.div>

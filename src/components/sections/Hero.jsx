@@ -19,7 +19,7 @@ const Hero = () => {
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
-        className="absolute right-0 top-0 z-20 hidden h-full w-2/5 translate-x-16 bg-[radial-gradient(ellipse_at_right,_rgba(255,0,0,0.6)_0%,_rgba(255,255,255,0)_70%)] md:block"
+        className="absolute right-0 top-0 z-20 hidden h-full w-2/5 bg-[radial-gradient(ellipse_at_right,_rgba(255,0,0,0.6)_0%,_rgba(255,255,255,0)_70%)] md:block"
       ></motion.div>
 
       <div className="mx-auto mb-20 mt-8 flex max-w-[1050px] items-center space-x-10 sm:mb-44 sm:mt-32 md:space-x-20 lg:mb-52 lg:mt-32">
@@ -31,9 +31,9 @@ const Hero = () => {
             animate="visible"
             className="flex"
           >
-            <span className="absolute mx-auto box-content hidden w-fit select-none border bg-gradient-to-r from-orange-400 to-[#FF0000] bg-clip-text py-4 text-center text-3xl font-thin tracking-wide text-transparent blur-xl sm:flex sm:text-7xl lg:text-8xl">
+            {/* <span className="absolute mx-auto box-content hidden w-fit select-none border bg-gradient-to-r from-orange-400 to-[#FF0000] bg-clip-text py-4 text-center text-3xl font-thin tracking-wide text-transparent blur-xl sm:flex sm:text-7xl lg:text-8xl">
               Colin Berry
-            </span>
+            </span> */}
             <h1 className="relative top-0 flex h-auto w-fit select-auto items-center justify-center bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text py-4 text-center text-5xl font-semibold tracking-wide text-transparent sm:text-7xl lg:text-8xl">
               Colin Berry
             </h1>
@@ -44,7 +44,7 @@ const Hero = () => {
             variants={container(0.1)}
             initial="hidden"
             animate="visible"
-            className="text-xl font-thin tracking-widest text-[#909090] sm:text-2xl lg:mt-1 lg:text-4xl"
+            className="text-xl font-thin tracking-widest text-[#a7a7a7] sm:text-2xl lg:mt-1 lg:text-4xl"
           >
             Engineering Student
           </motion.h2>
@@ -64,7 +64,7 @@ const Hero = () => {
             variants={container(0.2)}
             initial="hidden"
             animate="visible"
-            className="sm: mx-4 my-8 text-center text-sm font-light leading-6 tracking-wider text-[#929292] sm:mx-0 sm:text-left sm:leading-7"
+            className="mx-4 my-8 text-center text-md font-light leading-6 tracking-wide text-[#a7a7a7] sm:mx-0 sm:text-left sm:leading-7 lg:w-3/4"
           >
             I'm a computer engineering student interested in everything
             technology. Specializing in cybersecurity and minoring in computer
@@ -82,7 +82,7 @@ const Hero = () => {
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative rounded-xl bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% px-6 py-2 text-lg font-normal tracking-wider text-[#030303]"
+              className="flex justify-center text-[#030303] text-xl tracking-wide font-semibold rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-[7px] min-w-[100px]"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -93,12 +93,12 @@ const Hero = () => {
               href={"https://www.linkedin.com/in/colintberry/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative rounded-xl bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-0.5"
+              className="flex justify-center items-center group relative rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[2px] min-w-[100px]"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <span className="flex w-full rounded-xl bg-[#030303] px-5 py-2">
-                <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-lg font-normal tracking-wider text-transparent">
+              <span className="rounded-full bg-[#050505] px-5 py-2">
+                <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xl font-bold tracking-wide text-transparent">
                   Connect
                 </span>
               </span>

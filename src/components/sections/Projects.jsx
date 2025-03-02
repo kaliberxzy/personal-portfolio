@@ -19,7 +19,7 @@ const Projects = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
         viewport={{ once: true }}
-        className="mb-12 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-light tracking-wider text-transparent md:mb-10 md:text-4xl lg:mb-16"
+        className="mb-12 py-2 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-medium tracking-wide text-transparent md:mb-10 md:text-5xl lg:mb-16"
       >
         Projects
       </motion.h3>

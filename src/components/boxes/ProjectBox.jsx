@@ -33,15 +33,15 @@ const ProjectBox = (props) => {
         alt={`${props.title} Preview`}
       />
       <div className="absolute bottom-5 left-5 flex flex-col items-start justify-center space-y-1">
-        <h1 className="text-2xl tracking-wider text-[#dedede] group-hover:text-[#b2b2b2]">
+        <h1 className="text-2xl font-semibold tracking-wide text-[#dedede] group-hover:text-[#b2b2b2]">
           {props.title}
         </h1>
-        <h2 className="text-md bg-gradient-to-r from-orange-500 to-[#ff0000] bg-clip-text text-sm font-medium tracking-wider text-transparent group-hover:from-orange-700 group-hover:to-[#9c2c2c]">
+        <h2 className="bg-gradient-to-r from-orange-500 to-[#ff0000] bg-clip-text text-md font-semibold tracking-wide text-transparent group-hover:from-orange-700 group-hover:to-[#9c2c2c]">
           {props.subtitle}
         </h2>
       </div>
       <div className="absolute inset-0 hidden items-center justify-center group-hover:flex">
-          <div className="rounded-xl bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% px-5 py-3 text-md font-medium tracking-wider shadow-2xl shadow-black">
+          <div className="rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% px-7 py-3 text-lg font-semibold tracking-wide shadow-2xl shadow-black">
             {props.link != "" && ( <p>View Details</p> ) || props.link === "" && ( <p>In Progress</p> )}
           </div>
       </div>

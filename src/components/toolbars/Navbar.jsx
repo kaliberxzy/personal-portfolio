@@ -27,16 +27,16 @@ const Navbar = () => {
   });
 
   return (
-    <motion.div className="bg-[#030303]">
+    <motion.div>
       {/* Gradient 1: Quarter-circle in the top-left corner */}
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
-        className="absolute left-0 top-0 z-30 hidden h-2/6 w-1/6 overflow-auto bg-[radial-gradient(ellipse_at_top_left,_rgba(255,138,0,0.5)_0%,_rgba(255,255,255,0)_70%)] md:block"
+        className="absolute hidden md:block top-0 z-[-2] h-screen w-4/5 bg-[radial-gradient(ellipse_15%_35%_at_0%_-10%,rgb(254,112,3),rgba(255,255,255,0))]"
       ></motion.div>
 
-      <div className="mx-auto flex max-w-[1050px] items-center justify-between pb-5 pt-10">
+      <div className="mx-auto flex max-w-[1050px] items-center justify-between pb-5 pt-16">
         <motion.a
           href="/"
           className="ml-10 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-xl font-normal tracking-wider text-transparent"
@@ -46,12 +46,11 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.1 }}
         >
-          <img className="size-6" src={logo} alt="Colin Berry Logo" />
-          {/* c.berry */}
+          <img className="size-10 sm:size-12" src={logo} alt="Colin Berry Logo" />
         </motion.a>
 
-        <div className="flex items-center justify-center gap-10 font-light">
-          <ul className="relative hidden items-center justify-center gap-10 text-[#8E8E8E] md:flex">
+        <div className="text-xl flex items-center justify-center">
+          <ul className="relative hidden items-center justify-center gap-10 text-[#cdcdcd] md:flex">
             {navLinks.map((navLink) => (
               <Link
                 key={navLink.id}
@@ -60,7 +59,7 @@ const Navbar = () => {
                 duration={800}
               >
                 <motion.button
-                  className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent"
+                  className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent font-normal tracking-wide"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   variants={container(navLink.delay)}
@@ -69,13 +68,14 @@ const Navbar = () => {
                 >
                   {navLink.nav}
                 </motion.button>
+
               </Link>
             ))}
             <motion.div
               variants={container(0.4)}
               initial="hidden"
               animate="visible"
-              className="font-thin text-[#676767]"
+              className="font-normal text-[#8E8E8E]"
             >
               |
             </motion.div>
@@ -83,14 +83,14 @@ const Navbar = () => {
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="mr-10 rounded-xl bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% px-5 py-[7px] text-base font-normal tracking-wide text-stone-900"
+              className="flex justify-center text-[#030303] text-xl tracking-wide font-semibold mr-10 rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-[7px] min-w-[100px]"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
             >
-              Resume
+              <span>Resume</span>
             </motion.a>
           </ul>
 
@@ -111,11 +111,8 @@ const Navbar = () => {
                 : "fixed left-[-100%] top-0 h-full w-[45%]"
             }
           >
-            <ul className="my-10 ml-10 flex flex-col items-start justify-center gap-8 text-xl text-[#8e8e8e]">
+            <ul className="my-10 ml-10 flex flex-col items-start justify-center gap-8 text-2xl text-[#cdcdcd]">
               <img className="size-6" src={logo} alt="Colin Berry Logo" />
-              {/* <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-2xl tracking-wider text-transparent">
-                c.berry
-              </span> */}
               {navLinks.map((navLink) => (
                 <Link
                   key={navLink.id}
@@ -125,7 +122,7 @@ const Navbar = () => {
                 >
                   <motion.button
                     onClick={handleNav}
-                    className="bg-gradient-to-r bg-clip-text font-thin hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent"
+                    className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -137,11 +134,10 @@ const Navbar = () => {
                 href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent"
-                whileHover={{ scale: 1.1 }}
+                className="mt-[-2px] bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-2xl font-semibold tracking-wide text-transparent"
                 whileTap={{ scale: 0.9 }}
               >
-                Resume
+                <span>Resume</span>
               </motion.a>
             </ul>
           </motion.div>

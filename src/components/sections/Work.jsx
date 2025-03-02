@@ -5,17 +5,17 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="mx-10 mb-28 flex max-w-[1050px] flex-col justify-center pt-20 md:mb-64 md:h-screen md:items-center lg:pt-0 xl:mx-auto">
+    <div className="mx-10 mb-28 flex max-w-[1000px] flex-col justify-center pt-20 md:mb-64 md:h-screen md:items-center lg:pt-0 xl:mx-auto">
       <motion.h3
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
         viewport={{ once: true }}
-        className="mb-12 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-light tracking-wider text-transparent md:mb-10 md:text-4xl lg:mb-16"
+        className="mb-12 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-medium tracking-wide text-transparent md:mb-10 md:text-5xl lg:mb-16 pb-2"
       >
         Technical Work Experience
       </motion.h3>
-      <div className="flex w-full flex-wrap items-center gap-14">
+      <div className="flex w-full flex-wrap items-center gap-16">
         <WorkBox
           date="May 2024 - August 2024"
           title="Technology Product Development Intern - Stifel"

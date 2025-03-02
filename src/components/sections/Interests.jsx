@@ -14,13 +14,13 @@ import InterestBox from "../boxes/InterestBox";
 
 const Interests = () => {
   return (
-    <div className="mx-10 mb-28 flex max-w-[1050px] flex-col items-start pt-20 sm:items-center md:h-screen md:justify-center lg:mx-auto lg:pt-0">
+    <div className="mx-10 mb-28 flex max-w-[950px] flex-col items-start pt-20 sm:items-center md:h-screen md:justify-center lg:mx-auto lg:pt-0">
       <motion.h3
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
         viewport={{ once: true }}
-        className="mb-10 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-light tracking-wider text-transparent md:mb-10 md:text-4xl lg:mb-16"
+        className="mb-10 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-medium tracking-wide text-transparent md:mb-10 md:text-5xl lg:mb-16"
       >
         Interests
       </motion.h3>

@@ -41,7 +41,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="relative mx-10 hidden overflow-hidden rounded-xl bg-gradient-to-br from-orange-500 to-[#FF0000] to-80% p-1 sm:flex"
+        className="relative mx-10 hidden overflow-hidden rounded-2xl bg-gradient-to-br from-orange-500 to-[#FF0000] to-80% p-2 sm:flex"
       >
         <img
           className="relative z-10 rounded-xl sm:max-w-40 md:max-w-60 lg:max-w-96"
@@ -53,7 +53,7 @@ const About = () => {
         className={`overflow-hidden ${read ? "max-h-[1000px] pb-5" : "max-h-0"}`}
       >
         {/* Image 2 and Grad 2 */}
-        <div className="relative mx-10 mt-10 hidden rounded-xl bg-gradient-to-br from-orange-500 to-[#FF0000] to-80% p-1 sm:flex">
+        <div className="relative mx-10 mt-10 hidden rounded-2xl bg-gradient-to-br from-orange-500 to-[#FF0000] to-80% p-2 sm:flex">
           <img
             className="relative z-10 rounded-xl sm:max-w-40 md:max-w-60 lg:max-w-96"
             src={aboutPhoto2}
@@ -63,13 +63,13 @@ const About = () => {
         <div className="bg-[#030303] sm:max-md:h-[475px] md:max-lg:h-[250px]"></div>
       </div>
 
-      <div className="mb-28 ml-10 mr-10 flex flex-col items-start justify-center sm:absolute sm:ml-[245px] sm:mr-5 md:ml-[325px] lg:ml-[485px] lg:mt-[100px]">
+      <div className="mb-28 ml-10 mr-10 flex flex-col items-start justify-center sm:absolute sm:ml-[245px] sm:mr-10 md:ml-[325px] lg:ml-[400px] lg:mt-[80px]">
         <motion.h3
           variants={container(0.1)}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mb-7 overflow-hidden bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-light tracking-wider text-transparent md:text-4xl"
+          className="mb-7 overflow-hidden bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-medium tracking-wide text-transparent md:text-5xl"
         >
           About Me
         </motion.h3>
@@ -78,7 +78,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mb-5 overflow-hidden text-sm font-light leading-6 tracking-wider text-[#8E8E8E] lg:leading-7"
+          className="mb-5 overflow-hidden text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7"
         >
           {ABOUT_TEXT_1_1}
         </motion.p>
@@ -87,25 +87,25 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mb-5 overflow-hidden text-sm font-light leading-6 tracking-wider text-[#8E8E8E] lg:leading-7"
+          className="mb-5 overflow-hidden text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7"
         >
           {ABOUT_TEXT_1_2}
         </motion.p>
         <div
           className={`overflow-hidden ${read ? "max-h-[1000px]" : "max-h-0"}`}
         >
-          <p className="mb-5 text-sm font-light leading-6 tracking-wider text-[#8E8E8E] lg:leading-7">
+          <p className="mb-5 text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7">
             {ABOUT_TEXT_2_1}
           </p>
-          <p className="mb-5 text-sm font-light leading-6 tracking-wider text-[#8E8E8E] lg:leading-7">
+          <p className="mb-5 text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7">
             {ABOUT_TEXT_2_2}
           </p>
-          <p className="mb-5 text-sm font-light leading-6 tracking-wider text-[#8E8E8E] lg:leading-7">
+          <p className="mb-5 text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7">
             {ABOUT_TEXT_2_3}
           </p>
         </div>
         <motion.button
-          className="relative z-50 rounded-xl bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[1px]"
+          className="mt-3 flex justify-center items-center group relative z-50 rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[1px] p-[2px]"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setRead(!read)}
@@ -114,8 +114,8 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <span className="flex w-full rounded-xl bg-[#030303] px-5 py-2">
-            <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-sm font-normal tracking-wider text-transparent">
+          <span className="rounded-full bg-[#050505] px-7 py-2 ">
+            <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xl font-semibold tracking-wide text-transparent">
               {read ? "Read Less" : "Read More"}
             </span>
           </span>

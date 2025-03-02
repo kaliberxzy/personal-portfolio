@@ -34,6 +34,7 @@ function App() {
         <Loading />
       ) : (
         <div>
+        {/* <div class="hidden sm:block fixed top-0 z-[-2] h-screen w-screen bg-[#050505] bg-[radial-gradient(ellipse_50%_40%_at_50%_-10%,rgb(30,30,30),rgba(240,240,240,0))]"></div> */}
           <Element name="Home">
             <Navbar />
           </Element>

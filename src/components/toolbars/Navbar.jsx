@@ -50,7 +50,7 @@ const Navbar = () => {
         </motion.a>
 
         <div className="text-xl flex items-center justify-center">
-          <ul className="relative hidden items-center justify-center gap-10 text-[#cdcdcd] md:flex">
+          <ul className="relative hidden items-center justify-center gap-10 text-[#a7a7a7] md:flex">
             {navLinks.map((navLink) => (
               <Link
                 key={navLink.id}
@@ -59,7 +59,7 @@ const Navbar = () => {
                 duration={800}
               >
                 <motion.button
-                  className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent font-normal tracking-wide"
+                  className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent font-light tracking-wide"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   variants={container(navLink.delay)}

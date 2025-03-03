@@ -105,7 +105,7 @@ const Hero = () => {
             </motion.a>
           </motion.div>
         </div>
-        <div className="relative hidden sm:block sm:max-w-44 md:max-w-64">
+        <div className="-translate-x-20 relative hidden sm:block sm:max-w-44 md:max-w-64">
           <motion.img
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}

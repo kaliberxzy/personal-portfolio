@@ -63,7 +63,7 @@ const About = () => {
         <div className="bg-[#030303] sm:max-md:h-[475px] md:max-lg:h-[250px]"></div>
       </div>
 
-      <div className="text-pretty mb-28 ml-10 mr-10 flex flex-col items-start justify-center sm:absolute sm:ml-32 sm:translate-x-32 sm:mr-10 md:translate-x-56 lg:translate-x-96 lg:mt-20 w-3/5">
+      <div className="text-pretty mb-28 ml-10 mr-10 flex flex-col items-start justify-center sm:absolute sm:ml-32 sm:translate-x-32 sm:mr-10 md:translate-x-56 lg:translate-x-96 lg:mt-20 md:w-3/5">
         <motion.h3
           variants={container(0.1)}
           initial="hidden"

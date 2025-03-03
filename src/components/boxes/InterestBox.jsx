@@ -19,7 +19,7 @@ const InterestBox = (props) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="relative flex sm:p-2 lg:w-[465px]"
+      className="relative flex sm:p-2 lg:w-1/2"
     >
       <motion.img
         className="hidden sm:mr-4 sm:flex sm:h-16"

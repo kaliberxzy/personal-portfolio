@@ -22,7 +22,7 @@ const Hero = () => {
         className="absolute right-0 top-0 z-20 hidden h-full w-2/5 bg-[radial-gradient(ellipse_at_right,_rgba(255,0,0,0.6)_0%,_rgba(255,255,255,0)_70%)] md:block"
       ></motion.div>
 
-      <div className="mx-auto mb-20 mt-6 flex max-w-[1050px] items-center space-x-10 sm:mb-44 sm:mt-32 md:space-x-20 lg:mb-52 lg:mt-32">
+      <div className="mx-auto mb-20 mt-6 flex max-w-7xl items-center space-x-10 sm:mb-44 sm:mt-20 md:space-x-20 lg:mb-52 lg:mt-24">
         <div className="mx-10 flex flex-col items-center sm:items-start">
           {/* Main Header */}
           <motion.div
@@ -82,7 +82,7 @@ const Hero = () => {
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center items-center text-[#030303] text-xl tracking-wide font-bold rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-[7px] px-7"
+              className="flex justify-center items-center text-[#030303] text-xl tracking-wide font-semibold rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-3 px-7"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -93,7 +93,7 @@ const Hero = () => {
               href={"https://www.linkedin.com/in/colintberry/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center items-center group relative rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[2px]"
+              className="flex justify-center items-center group relative rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-1"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >

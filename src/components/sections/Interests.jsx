@@ -14,7 +14,7 @@ import InterestBox from "../boxes/InterestBox";
 
 const Interests = () => {
   return (
-    <div className="mx-10 mb-28 flex max-w-[950px] flex-col items-start pt-20 sm:items-center md:h-screen md:justify-center lg:mx-auto lg:pt-0">
+    <div className="mx-10 mb-28 flex max-w-7xl flex-col items-start pt-20 sm:items-center md:h-screen md:justify-center lg:mx-auto lg:pt-0">
       <motion.h3
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

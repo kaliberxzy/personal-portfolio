@@ -31,8 +31,8 @@ const About = () => {
     <div
       className={
         read
-          ? "relative mx-auto flex max-w-[1050px] items-start sm:mb-80 sm:flex-col md:mb-20"
-          : "relative mx-auto flex h-screen max-w-[1050px] items-center"
+          ? "relative mx-auto flex max-w-7xl items-start sm:mb-80 sm:flex-col md:mb-20"
+          : "relative mx-auto flex h-screen max-w-7xl items-center"
       }
     >
       {/* Image 1 and Grad 1 */}
@@ -63,7 +63,7 @@ const About = () => {
         <div className="bg-[#030303] sm:max-md:h-[475px] md:max-lg:h-[250px]"></div>
       </div>
 
-      <div className="mb-28 ml-10 mr-10 flex flex-col items-start justify-center sm:absolute sm:ml-[245px] sm:mr-10 md:ml-[325px] lg:ml-[400px] lg:mt-[80px]">
+      <div className="text-pretty mb-28 ml-10 mr-10 flex flex-col items-start justify-center sm:absolute sm:ml-32 sm:translate-x-32 sm:mr-10 md:translate-x-56 lg:translate-x-96 lg:mt-20 w-3/5">
         <motion.h3
           variants={container(0.1)}
           initial="hidden"
@@ -105,7 +105,7 @@ const About = () => {
           </p>
         </div>
         <motion.button
-          className="mt-3 flex justify-center items-center group relative z-50 rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-[1px] p-[2px]"
+          className="mt-3 flex justify-center items-center group relative z-50 rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-1"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setRead(!read)}

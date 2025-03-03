@@ -36,7 +36,7 @@ const Navbar = () => {
         className="absolute hidden md:block top-0 z-[-2] h-screen w-4/5 bg-[radial-gradient(ellipse_15%_35%_at_0%_-10%,rgb(254,112,3),rgba(255,255,255,0))]"
       ></motion.div>
 
-      <div className="mx-auto flex max-w-[1050px] items-center justify-between pb-5 pt-10 sm:pt-16">
+      <div className="mx-auto flex max-w-7xl items-center justify-between pb-5 pt-10 sm:pt-16">
         <motion.a
           href="/"
           className="ml-10 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-xl font-normal tracking-wider text-transparent"
@@ -83,7 +83,7 @@ const Navbar = () => {
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center text-[#030303] text-xl tracking-wide font-semibold mr-10 rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-[7px] min-w-[100px]"
+              className="flex justify-center text-[#030303] text-xl tracking-wide font-semibold mr-10 rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-3 px-7"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={container(0.5)}
@@ -134,7 +134,7 @@ const Navbar = () => {
                 href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-[-2px] bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-2xl font-semibold tracking-wide text-transparent"
+                className="bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-2xl font-semibold tracking-wide text-transparent"
                 whileTap={{ scale: 0.9 }}
               >
                 <span>Resume</span>

@@ -24,7 +24,7 @@ const Interests = () => {
       >
         Interests
       </motion.h3>
-      <div className="flex w-full flex-wrap justify-between gap-8 placeholder:sm:gap-4">
+      <div className="flex flex-wrap justify-between gap-8 placeholder:sm:gap-4">
         <InterestBox
           icon={reactIcon}
           title="UI/UX Design"

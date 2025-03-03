@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="mx-10 mb-28 flex max-w-[1000px] flex-col justify-center pt-20 md:mb-64 md:h-screen md:items-center lg:pt-0 xl:mx-auto">
+    <div className="mx-10 mb-28 flex max-w-7xl flex-col justify-center pt-20 md:mb-64 md:h-screen md:items-center lg:pt-0 xl:mx-auto">
       <motion.h3
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

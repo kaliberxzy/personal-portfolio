@@ -25,10 +25,10 @@ const WorkBox = (props) => {
       </div>
 
       <div className="flex flex-grow flex-col items-start">
-        <h2 className="mb-5 text-2xl font-normal tracking-wide text-[#c1c1c1]">
+        <h2 className="mb-3 text-2xl font-normal tracking-wide text-[#c1c1c1]">
           {props.title}
         </h2>
-        <p className="mb-6 text-pretty text-md font-light leading-6 lg:leading-7 tracking-wide text-[#a7a7a7]">
+        <p className="mb-5 text-pretty text-md font-light leading-6 lg:leading-7 tracking-wide text-[#a7a7a7]">
           {props.subtitle}
         </p>
         <div className="flex flex-wrap items-start">

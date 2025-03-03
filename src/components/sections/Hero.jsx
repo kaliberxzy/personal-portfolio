@@ -97,7 +97,7 @@ const Hero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <span className="rounded-full bg-[#050505] px-5 py-2">
+              <span className="rounded-full bg-[#030303] px-5 py-2">
                 <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xl font-bold tracking-wide text-transparent">
                   Connect
                 </span>

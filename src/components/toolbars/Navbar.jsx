@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CgMenu, CgClose } from "react-icons/cg";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import resume from "../../../public/colin-berry-resume-2024.pdf";
+import resume from "../../../public/colinberry-resume-2025.pdf";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {

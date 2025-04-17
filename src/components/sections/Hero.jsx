@@ -53,7 +53,7 @@ const Hero = () => {
             variants={container(0.1)}
             initial="hidden"
             animate="visible"
-            className="italic mt-2 bg-gradient-to-r from-orange-500 from-10% to-[#FF0000] bg-clip-text font-semibold tracking-wider text-transparent text-md sm:text-lg lg:mt-3 lg:text-xl"
+            className="italic mt-2 bg-gradient-to-r from-orange-500 from-10% to-[#FF0000] bg-clip-text font-semibold tracking-wider text-transparent text-sm sm:text-lg lg:mt-3 lg:text-xl text-center"
           >
           College of Engineering Outstanding Senior
           </motion.h2>

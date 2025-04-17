@@ -29,7 +29,7 @@ const About = () => {
       className={
         read
           ? "relative mx-auto flex max-w-7xl items-start sm:mb-80 sm:flex-col md:mb-20"
-          : "relative mx-auto flex h-screen max-w-7xl items-center"
+          : "relative mx-auto flex h-screen max-w-7xl items-center mt-20"
       }
     >
       {/* Image 1 and Grad 1 */}

@@ -9,7 +9,7 @@ import {
   INTEREST_TEXT_HARDWARE,
   INTEREST_TEXT_SECURITY,
   INTEREST_TEXT_SOFTWARE,
-} from "../../constants";
+} from "../../constants/index";
 import InterestBox from "../boxes/InterestBox";
 
 const Interests = () => {

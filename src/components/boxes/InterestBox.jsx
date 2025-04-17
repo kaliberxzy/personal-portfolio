@@ -25,7 +25,7 @@ const InterestBox = (props) => {
         className="hidden sm:mr-4 sm:flex sm:h-16"
         whileHover={{ scale: 1.1 }}
         src={props.icon}
-        alt="react icon"
+        alt="interest icon"
       />
       <div className="absolute z-[-2] hidden size-10 translate-x-2 rounded-full bg-gradient-to-br from-orange-400 to-[#FF0000] blur-xl sm:block"></div>
       <div className="flex flex-col space-y-4 sm:pt-4">
@@ -36,7 +36,7 @@ const InterestBox = (props) => {
           {props.text}
         </p>
       </div>
-    </motion.div>
+    </motion.div >
   );
 };
 

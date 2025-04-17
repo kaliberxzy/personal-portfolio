@@ -1,6 +1,6 @@
 import React from "react";
 import WorkBox from "../boxes/WorkBox";
-import { WORK_TEXT_1, WORK_TEXT_2, WORK_TEXT_3 } from "../../constants";
+import { WORK_TEXT_1, WORK_TEXT_2, WORK_TEXT_3 } from "../../constants/index";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -18,21 +18,24 @@ const Projects = () => {
       <div className="flex w-full flex-wrap items-center gap-16">
         <WorkBox
           date="May 2024 - August 2024"
-          title="Technology Product Development Intern - Stifel"
+          title="Technology Product Development Intern"
+          employer="Stifel Financial"
           subtitle={WORK_TEXT_1}
           skills={["React + Vite", "TailwindCSS", "Javascript", "HTML"]}
           delay={0}
         />
         <WorkBox
           date="May 2023 - August 2023"
-          title="Technology Product Development Intern - Stifel"
+          title="Technology Product Development Intern"
+          employer="Stifel Financial"
           subtitle={WORK_TEXT_2}
           skills={["Jira", "Sharepoint Design", "Visio", "Process Mapping"]}
           delay={0}
         />
         <WorkBox
           date="August 2021 - May 2024"
-          title="Technician and Shift Lead - SalukiTech Service Center"
+          title="Information Technology Supervisor"
+          employer="SalukiTech Service Center"
           subtitle={WORK_TEXT_3}
           skills={["Windows", "MacOS", "Troubleshooting", "Active Directory"]}
           delay={0}

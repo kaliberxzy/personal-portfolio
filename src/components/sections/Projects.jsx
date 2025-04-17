@@ -34,28 +34,28 @@ const Projects = () => {
         <ProjectBox
           image={blockchainProjectPreview}
           title="What is Blockchain?"
-          subtitle="Video Explanation of Bitcoin"
+          subtitle="Demystifying Bitcoin"
           link="https://www.youtube.com/watch?v=msh0eyI1kGk"
           delay={0.1}
         />
         <ProjectBox
           image={aiProjectPreview}
           title="Digit Recognition AI"
-          subtitle="Neural Network Using Python"
+          subtitle="Python Neural Network from Scratch"
           link={network}
           delay={0.3}
         />
         <ProjectBox
           image={weedProjectPreview}
           title="Bicycle Weed Eater"
-          subtitle="Senior Design"
+          subtitle="Senior Design Project"
           link=""
           delay={0}
         />
         <ProjectBox
           image={calculusProjectPreview}
           title="Calculus w/ Lego"
-          subtitle="Find Volume By Integration"
+          subtitle="Using Integration to Calculate Volume"
           link={lego}
           delay={0.1}
         />

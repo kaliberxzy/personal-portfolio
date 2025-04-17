@@ -59,7 +59,7 @@ const Navbar = () => {
                 duration={800}
               >
                 <motion.button
-                  className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent font-light tracking-wide"
+                  className="bg-gradient-to-r bg-clip-text hover:from-orange-500 hover:to-[#FF0000] hover:text-transparent font-normal tracking-wide"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   variants={container(navLink.delay)}

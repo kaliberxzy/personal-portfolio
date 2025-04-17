@@ -49,6 +49,15 @@ const Hero = () => {
             Engineering Student
           </motion.h2>
 
+          <motion.h2
+            variants={container(0.1)}
+            initial="hidden"
+            animate="visible"
+            className="italic mt-2 bg-gradient-to-r from-orange-500 from-10% to-[#FF0000] bg-clip-text font-semibold tracking-wider text-transparent text-md sm:text-lg lg:mt-3 lg:text-xl"
+          >
+          College of Engineering Outstanding Senior
+          </motion.h2>
+
           {/* Mobile Hero Image */}
           <motion.img
             variants={container(0.1)}
@@ -64,11 +73,12 @@ const Hero = () => {
             variants={container(0.2)}
             initial="hidden"
             animate="visible"
-            className="mx-4 my-8 text-center text-md font-light leading-6 tracking-wide text-[#a7a7a7] sm:mx-0 sm:text-left sm:leading-7 lg:w-3/4"
+            className="mx-4 mb-8 mt-6 text-center text-md font-light leading-6 tracking-wide text-[#a7a7a7] sm:mx-0 sm:text-left sm:leading-7 lg:w-3/4"
           >
             I'm a computer engineering student interested in everything
             technology. Specializing in cybersecurity and minoring in computer
-            science, I strive in learning new concepts and pursuing excellence.
+            science, I love building things, learning new concepts, and pursuing
+            <span class="font-bold bg-gradient-to-r from-orange-500 from-30% to-[#FF0000] bg-clip-text text-transparent"> excellence.</span>
           </motion.p>
 
           {/* Hero Buttons */}

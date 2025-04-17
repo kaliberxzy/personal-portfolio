@@ -1,14 +1,11 @@
 import { React, useState } from "react";
 import { motion } from "framer-motion";
 import {
-  ABOUT_TEXT_1_1,
-  ABOUT_TEXT_1_2,
-  ABOUT_TEXT_2_1,
-  ABOUT_TEXT_2_2,
-  ABOUT_TEXT_2_3,
-} from "../../constants";
-import aboutPhoto1 from "../../assets/about-hero-photos/about-photo1.png";
-import aboutPhoto2 from "../../assets/about-hero-photos/about-photo2.jpg";
+  ABOUT_TEXT_1,
+  ABOUT_TEXT_2
+} from "../../constants/index";
+import aboutPhoto2 from "../../assets/about-hero-photos/about-photo1.png";
+import aboutPhoto1 from "../../assets/about-hero-photos/about-photo2.jpg";
 
 const About = () => {
   const [read, setRead] = useState(false);
@@ -78,31 +75,15 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mb-5 overflow-hidden text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7"
+          className="mb-4 overflow-hidden text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7"
         >
-          {ABOUT_TEXT_1_1}
+          {ABOUT_TEXT_1}
         </motion.p>
-        <motion.p
-          variants={container(0.2)}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="mb-5 overflow-hidden text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7"
-        >
-          {ABOUT_TEXT_1_2}
-        </motion.p>
-        <div
-          className={`overflow-hidden ${read ? "max-h-[1000px]" : "max-h-0"}`}
-        >
+        <div className={`overflow-hidden ${read ? "max-h-[1000px]" : "max-h-0"}`}>
           <p className="mb-5 text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7">
-            {ABOUT_TEXT_2_1}
+            {ABOUT_TEXT_2}
           </p>
-          <p className="mb-5 text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7">
-            {ABOUT_TEXT_2_2}
-          </p>
-          <p className="mb-5 text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7">
-            {ABOUT_TEXT_2_3}
-          </p>
+
         </div>
         <motion.button
           className="mt-3 flex justify-center items-center group relative z-50 rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-1"

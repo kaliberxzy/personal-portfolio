@@ -34,24 +34,26 @@ function App() {
         <Loading />
       ) : (
         <div>
-        {/* <div class="hidden sm:block fixed top-0 z-[-2] h-screen w-screen bg-[#050505] bg-[radial-gradient(ellipse_50%_40%_at_50%_-10%,rgb(30,30,30),rgba(240,240,240,0))]"></div> */}
+          {/* <div class="hidden sm:block fixed top-0 z-[-2] h-screen w-screen bg-[#050505] bg-[radial-gradient(ellipse_50%_40%_at_50%_-10%,rgb(30,30,30),rgba(240,240,240,0))]"></div> */}
           <Element name="Home">
             <Navbar />
           </Element>
-          <Hero />
-          <Element name="About">
-            <About />
-          </Element>
-          <Element name="Interests">
-            <Interests />
-          </Element>
-          <Element name="Projects">
-            <Projects />
-          </Element>
-          <Element name="Work">
-            <Work />
-          </Element>
-          <Footer />
+          <div>
+            <Hero />
+            <Element name="About">
+              <About />
+            </Element>
+            <Element name="Interests">
+              <Interests />
+            </Element>
+            <Element name="Projects">
+              <Projects />
+            </Element>
+            <Element name="Work">
+              <Work />
+            </Element>
+            <Footer />
+          </div>
         </div>
       )}
     </>

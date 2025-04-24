@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="mx-10 mb-28 flex max-w-7xl flex-col justify-center pt-20 md:mb-64 md:h-screen md:items-center lg:pt-0 xl:mx-auto">
+    <div className="mx-10 mb-28 flex max-w-7xl flex-col justify-center pt-20 sm:mt-96 md:mb-64 md:h-screen md:items-center lg:pt-0 xl:mx-auto">
       <motion.h3
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
         viewport={{ once: true }}
-        className="mb-12 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text text-3xl font-medium tracking-wide text-transparent md:mb-10 md:text-5xl lg:mb-16 pb-2"
+        className="mb-12 bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% bg-clip-text pb-2 text-3xl font-medium tracking-wide text-transparent md:mb-10 md:text-5xl lg:mb-16"
       >
         Technical Work Experience
       </motion.h3>

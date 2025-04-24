@@ -1,9 +1,6 @@
 import { React, useState } from "react";
 import { motion } from "framer-motion";
-import {
-  ABOUT_TEXT_1,
-  ABOUT_TEXT_2
-} from "../../constants/index";
+import { ABOUT_TEXT_1, ABOUT_TEXT_2 } from "../../constants/index";
 import aboutPhoto2 from "../../assets/about-hero-photos/about-photo1.png";
 import aboutPhoto1 from "../../assets/about-hero-photos/about-photo2.jpg";
 
@@ -29,7 +26,7 @@ const About = () => {
       className={
         read
           ? "relative mx-auto flex max-w-7xl items-start sm:mb-80 sm:flex-col md:mb-20"
-          : "relative mx-auto flex h-screen max-w-7xl items-center mt-20"
+          : "relative mx-auto flex h-screen max-w-7xl items-center"
       }
     >
       {/* Image 1 and Grad 1 */}
@@ -60,7 +57,7 @@ const About = () => {
         <div className="bg-[#030303] sm:max-md:h-[475px] md:max-lg:h-[250px]"></div>
       </div>
 
-      <div className="text-pretty mb-28 ml-10 mr-10 flex flex-col items-start justify-center sm:absolute sm:ml-32 sm:translate-x-32 sm:mr-10 md:translate-x-56 lg:translate-x-96 lg:mt-20 md:w-3/5">
+      <div className="mb-28 ml-10 mr-10 flex flex-shrink flex-col items-start justify-center text-pretty sm:absolute sm:ml-32 sm:mr-10 sm:translate-x-32 md:w-3/5 md:translate-x-56 lg:mt-20 lg:translate-x-96">
         <motion.h3
           variants={container(0.1)}
           initial="hidden"
@@ -75,18 +72,19 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mb-4 overflow-hidden text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7"
+          className="text-md mb-4 overflow-hidden font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7"
         >
           {ABOUT_TEXT_1}
         </motion.p>
-        <div className={`overflow-hidden ${read ? "max-h-[1000px]" : "max-h-0"}`}>
-          <p className="mb-5 text-md font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7">
+        <div
+          className={`overflow-hidden ${read ? "max-h-[1000px]" : "max-h-0"}`}
+        >
+          <p className="text-md mb-5 font-light leading-6 tracking-wide text-[#a7a7a7] lg:leading-7">
             {ABOUT_TEXT_2}
           </p>
-
         </div>
         <motion.button
-          className="mt-3 flex justify-center items-center group relative z-50 rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-1"
+          className="group relative z-50 mt-3 flex items-center justify-center rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-1"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setRead(!read)}
@@ -95,7 +93,7 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <span className="rounded-full bg-[#030303] px-7 py-2 ">
+          <span className="rounded-full bg-[#030303] px-7 py-2">
             <span className="bg-gradient-to-r from-orange-500 to-[#FF0000] bg-clip-text text-xl font-semibold tracking-wide text-transparent">
               {read ? "Read Less" : "Read More"}
             </span>

@@ -9,6 +9,7 @@ import portfolioProjectPreview from "../../assets/projects-imgs/portfolio-projec
 import network from "../../../public/colin-berry-neural-network-project.pdf";
 import lego from "../../../public/colin-berry-lego-calculus-project.pdf";
 import dashboard from "../../../public/colin-berry-dashboard-project.pdf";
+import weedeater from "../../../public/WW202420_FinalDesignReport.pdf";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -49,7 +50,7 @@ const Projects = () => {
           image={weedProjectPreview}
           title="Bicycle Weed Eater"
           subtitle="Senior Design Project"
-          link=""
+          link={weedeater}
           delay={0}
         />
         <ProjectBox

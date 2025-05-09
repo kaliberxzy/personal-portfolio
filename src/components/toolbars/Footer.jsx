@@ -105,7 +105,7 @@ const Footer = () => {
   });
 
   return (
-    <div>
+    <div className="mt-0 md:mt-20">
       <div className="mb-12 h-[1px] w-full bg-gradient-to-r from-orange-500 to-[#FF0000]"></div>
       <div className="mx-10 mb-20 flex max-w-[1050px] flex-wrap items-baseline justify-between gap-8 md:mb-56 xl:mx-auto">
         <motion.div

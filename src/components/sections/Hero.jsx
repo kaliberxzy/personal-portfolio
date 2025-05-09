@@ -53,13 +53,13 @@ const Hero = () => {
             variants={container(0.1)}
             initial="hidden"
             animate="visible"
-            href = "https://www.linkedin.com/feed/update/urn:li:activity:7318073284275646466/"
+            href="https://www.linkedin.com/feed/update/urn:li:activity:7318073284275646466/"
             target="_blank"
             whileHover={{ scale: 0.99 }}
             whileTap={{ scale: 1.01 }}
-            className="italic mt-2 bg-gradient-to-r hover:from-orange-700 hover:to-[#BB0000] from-orange-500 from-10% to-[#FF0000] bg-clip-text font-semibold tracking-wider text-transparent text-sm sm:text-lg lg:mt-3 lg:text-xl text-center"
+            className="mt-2 bg-gradient-to-r from-orange-500 from-10% to-[#FF0000] bg-clip-text text-center text-sm font-semibold italic tracking-wider text-transparent hover:from-orange-700 hover:to-[#BB0000] sm:text-left sm:text-lg lg:mt-3 lg:text-xl"
           >
-          College of Engineering Outstanding Senior
+            College of Engineering Outstanding Senior
           </motion.a>
 
           {/* Mobile Hero Image */}
@@ -77,12 +77,15 @@ const Hero = () => {
             variants={container(0.2)}
             initial="hidden"
             animate="visible"
-            className="mx-4 mb-8 mt-6 text-center text-md font-light leading-6 tracking-wide text-[#a7a7a7] sm:mx-0 sm:text-left sm:leading-7 lg:w-3/4"
+            className="text-md mx-4 mb-8 mt-6 text-center font-light leading-6 tracking-wide text-[#a7a7a7] sm:mx-0 sm:text-left sm:leading-7 lg:w-3/4"
           >
             I'm a computer engineering student interested in everything
             technology. Specializing in cybersecurity and minoring in computer
             science, I love building things, learning new concepts, and pursuing
-            <span class="font-bold bg-gradient-to-r from-orange-500 from-30% to-[#FF0000] bg-clip-text text-transparent"> excellence.</span>
+            <span class="bg-gradient-to-r from-orange-500 from-30% to-[#FF0000] bg-clip-text font-bold text-transparent">
+              {" "}
+              excellence.
+            </span>
           </motion.p>
 
           {/* Hero Buttons */}
@@ -96,7 +99,7 @@ const Hero = () => {
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center items-center text-[#030303] text-xl tracking-wide font-semibold rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% py-3 px-7"
+              className="flex items-center justify-center rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% px-7 py-3 text-xl font-semibold tracking-wide text-[#030303]"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -107,7 +110,7 @@ const Hero = () => {
               href={"https://www.linkedin.com/in/colintberry/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center items-center group relative rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-1"
+              className="group relative flex items-center justify-center rounded-full bg-gradient-to-r from-orange-500 to-[#FF0000] to-80% p-1"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
